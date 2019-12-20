@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="battleship.css">
+    <title> Battleship Game! </title>
+</head>
+<body>
+    <header>
+        <div class = header>
+            <h1> Nicole's Battleship Game </h1> 
+        </div>
+    </header>
+        <script>
+        var x = [0,0,0,1,0];
+        var c = 0;
+        var i=false;
+        for(var z = 0; z < 3; z++ ){
+            var d = prompt ("enter your guess battleship number")
+            c++;
+            if (x[d-1] === 1){
+                i=true;
+                break;
+            }
+            alert ("try again!");
+        }
+        if(i=== false){
+            alert ("you have not found the battleship with the bomb");
+        }else{
+            alert ("congrats! you have found the battleship with the bomb");
+        }
+    </script>
+</body>
+</html>
